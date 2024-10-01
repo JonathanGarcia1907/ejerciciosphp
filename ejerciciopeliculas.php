@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <img src="" alt="">
@@ -29,6 +30,22 @@
                 echo "<br> <h1>$clave[nota]</h1></br> " ;
                 echo "<br> <h1>$clave[argumento]</h1></br> " ;
             } ;
-            ?>
+            
+    ?>s
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="$clave[poster]" alt=""> ;
+        </div>
+        <div class="col-sm-8">
+            <br> <h1>$clave[título]</h1></br> ;
+            <br> <p>$clave[plataforma]</p></br> ;
+            <br> <p>$clave[nota]</p></br> ;
+            <br> <p>$clave[argumento]</p></br> ;
+        </div>
+    </div>
+    <?php
+    ?>
+
 </body>
 </html>
