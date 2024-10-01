@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <img src="" alt="">
     <?php
 
         $datos = [
@@ -21,11 +22,12 @@
             ["título" => "Altered Carbon", "poster" => "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/nQKQ1W2NX6JUix8eh8IYkYdVwz8.jpg", "plataforma" => "Netflix", "nota" => "77", "argumento" =>"250 años después de su muerte, un prisionero vuelve a la vida en un nuevo cuerpo para resolver un asesinato y ganar así su libertad."],
             ] ;
 
-            foreach ($datos as $clave => $valor){
-                foreach ($valor as $clave2 => $valor2){
-                    echo  $valor2;
-                    
-                }
+            foreach ($datos as $clave){
+                echo "<br> <h1>$clave[título]</h1></br> " ;
+                echo "<br> <img src=\"$clave[poster]\" alt=\"\"></br> " ;
+                echo "<br> <h1>$clave[plataforma]</h1></br> " ;
+                echo "<br> <h1>$clave[nota]</h1></br> " ;
+                echo "<br> <h1>$clave[argumento]</h1></br> " ;
             } ;
             ?>
 </body>
