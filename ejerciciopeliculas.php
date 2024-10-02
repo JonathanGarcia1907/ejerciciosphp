@@ -23,29 +23,31 @@
             ["título" => "Altered Carbon", "poster" => "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/nQKQ1W2NX6JUix8eh8IYkYdVwz8.jpg", "plataforma" => "Netflix", "nota" => "77", "argumento" =>"250 años después de su muerte, un prisionero vuelve a la vida en un nuevo cuerpo para resolver un asesinato y ganar así su libertad."],
             ] ;
 
-            foreach ($datos as $clave){
+            /* foreach ($datos as $clave){
                 echo "<br> <h1>$clave[título]</h1></br> " ;
                 echo "<br> <img src=\"$clave[poster]\" alt=\"\"></br> " ;
                 echo "<br> <h1>$clave[plataforma]</h1></br> " ;
                 echo "<br> <h1>$clave[nota]</h1></br> " ;
                 echo "<br> <h1>$clave[argumento]</h1></br> " ;
-            } ;
+            } ; */
             
-    ?>s
-
+    ?>
+    <!-- <?php
+        foreach ($datos as $clave){};
+    ?>
     <div class="row">
         <div class="col-sm-4">
-            <img src="$clave[poster]" alt=""> ;
+            <img src="$clave" alt=""> ;
         </div>
         <div class="col-sm-8">
-            <br> <h1>$clave[título]</h1></br> ;
-            <br> <p>$clave[plataforma]</p></br> ;
-            <br> <p>$clave[nota]</p></br> ;
-            <br> <p>$clave[argumento]</p></br> ;
+            <br> <h3>$clave</h3></br> ;
+            <br> <p>$clave</p></br> ;
+            <br> <p>$clave</p></br> ;
+            <br> <p>$clave</p></br> ;
         </div>
     </div>
     <?php
-    ?>
+    ?> -->
 
 </body>
 </html>
